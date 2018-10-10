@@ -1,0 +1,12 @@
+<div class="container">
+  <form #postForm="ngForm">
+    Enter Post Title:<input type="text" class="form-control" name="postTitle" #pTitle="ngModel" [ngModel] required minlength="5">
+    <div class="text-danger" *ngIf="pTitle.errors">
+      <div *ngIf="pTitle.errors['required'] && pTitle.touched">Post title is a mandatory field</div>
+      <div *ngIf="pTitle.errors['minlength']">Post title must have more than 5 char</div>
+    </div>
+    Enter Post Content:<input type="text" class="form-control" name="postContent" #pContent="ngModel" [ngModel]>
+    <button [disabled]="!postForm.valid">Save</button>
+  </form>
+  <button (click)="abc(pTitle)">Click</button>
+</div>

@@ -1,0 +1,9 @@
+#d1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.blue{
+    border:2px solid;
+    margin:10px;
+    padding:20px;
+    background-color: lightskyblue;
+}

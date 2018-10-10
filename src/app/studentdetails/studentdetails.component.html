@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let student of studentsList;let i=index;">
+    <a [routerLink]="['/',studentsList[i]|json]">
+      {{student.firstname}}
+    </a>
+  </li>
+</ul>

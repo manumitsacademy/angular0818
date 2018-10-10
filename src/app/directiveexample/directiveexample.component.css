@@ -1,0 +1,16 @@
+#d1{
+    border:2px solid;
+    padding:10px;
+    margin:10px;
+    background-color: lightgoldenrodyellow;
+}
+
+.reddish{
+    background-color: lightcoral;
+}
+.bluish{
+    background-color: lightblue;
+}
+.boldish{
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+
+<div [formGroup]="userform">
+  username:<input type="text" formControlName="username"><br>
+  <div *ngIf="userform.controls['username'].touched && userform.controls['username'].errors">
+    <div *ngIf="userform.controls['username'].errors['required']">Please enter the user name</div>
+    <div *ngIf="userform.controls['username'].errors['minlength']">User Name Must be more than 3 char</div>
+  </div>
+  password:<input type="text" formControlName="password"><br>
+  <button [disabled]="!userform.valid">Login</button>
+  <button (click)="userform.reset()">Reset</button>
+</div>
+<button (click)="abc()">Click</button>

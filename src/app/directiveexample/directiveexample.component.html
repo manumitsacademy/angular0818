@@ -1,0 +1,24 @@
+<div id='d1'>
+  <h1>Directives in Angular6</h1>
+  <table class="table">
+    <tr>
+      <th>Sno.</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Location</th>
+    </tr>
+    <!-- ngFor properties : index,even,odd,first,last-->
+    <tr *ngFor="let s of students;let i = index;let e = even;let f = first;trackBy : abc"
+       [class]="e?'reddish':'bluish'"
+       [class]="f?'boldish':''" >
+      <td>{{i+1}}</td>
+      <td>{{s.firstname}}</td>
+      <td>{{s.lastname}}</td>
+      <td>{{s.location}}</td>
+      <td>{{e}}</td>
+    </tr>
+
+  </table>
+  <input type="checkbox" [(ngModel)]="flag">
+  <h1 *ngIf="flag">manumits.com</h1>
+</div>
