@@ -1,0 +1,9 @@
+<div [formGroup]="regForm" class="form-group container">
+  username:<input type="text" formControlName="username" class="form-control">
+  password:<input type="text" formControlName="password" class="form-control">
+  confirm password:<input type="text" formControlName="confirmpassword" class="form-control">
+  email:<input type="text" formControlName="emailid" class="form-control">
+  <button [disabled]="!regForm.valid">Register</button>
+</div>
+
+<button (click)="abc()">sdfsd</button>

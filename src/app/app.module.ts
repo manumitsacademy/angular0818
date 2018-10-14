@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import {HttpClientModule} from '@angular/common/http'
 import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainareaComponent } from './mainarea/mainarea.component';
@@ -20,6 +19,7 @@ import { AddcourseComponent } from './addcourse/addcourse.component';
 import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
 import { StudentinfoComponent } from './studentinfo/studentinfo.component';
 import {UserformComponent} from './userform/userform.component';
+import { SignupComponent } from './signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +35,8 @@ import {UserformComponent} from './userform/userform.component';
     AddcourseComponent,
     StudentdetailsComponent,
     StudentinfoComponent,
-    UserformComponent
+    UserformComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +71,10 @@ import {UserformComponent} from './userform/userform.component';
       {
         path:"userform",
         component:UserformComponent
+      },
+      {
+        path:"signup",
+        component:SignupComponent
       },
       {
         path:":st",
